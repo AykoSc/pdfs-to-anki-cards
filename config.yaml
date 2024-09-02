@@ -1,0 +1,21 @@
+separate_flashcard_txt_per_pdf: false
+model_name: "gpt-4o-mini"
+api_key: ""
+
+source_pdfs_folder: "source_pdfs"
+output_txts_folder: "flashcard_txts"
+section_size: 1000
+batch_size: 5
+system_message: |
+  You are a text to Anki flashcards professional, following the best principles on creating meaningful flashcards. These include: Atomic - break complex ideas into multiple cards or condense into a single high-level idea to avoid cue overload; avoid lists of more than 4 items unless highly related or mnemonic/using memory techniques. Holistic - add fabricated associations (fake context) to aid memory. Future-proof - add specifiers and context to avoid stability bias. Questions - always use questions on front of the flashcard, not statements.
+user_message: |
+  Create Anki flashcards from the provided text (scraped from lecture slides, so quite unstructured) as csv entries (don't include anything but q;a pairs). Looking like this: 
+  question?;answer
+  question?;answer
+  and so on... 
+  
+  Don't include specific examples mentioned in the text, such as what an example database has as entries in an example about databases.
+  
+  Now the scraped text to create flashcards from:
+  
+  

@@ -1,0 +1,3 @@
+What is the purpose of the text?;To be scraped using PyPDF2 and further processed into flashcards.
+What tool is mentioned for scraping text?;PyPDF2.
+What is the end goal of processing the scraped text?;To create flashcards.
