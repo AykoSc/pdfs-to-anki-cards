@@ -5,6 +5,7 @@ This project converts text extracted from PDF files into Anki flashcards using O
 ## Requirements
 
 - Python 3.x
+- OpenAI's API key.
 
 ## Installation
 
